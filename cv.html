@@ -524,7 +524,23 @@
                 margin-top: 5px;
                 color: #000;
             }
-        </style>		
+        </style>
+        
+    <script>
+		var url = "https://drive.google.com/file/d/1woL8l-wetgCvG-KXbhfsvywnzhCt7Tpj/view?usp=sharing";
+        function print(e) {
+            e.preventDefault();
+            if (e.ctrlKey && e.keyCode == 80) {
+                window.open(url);
+            }
+        }
+        document.addEventListener('keydown', print, false);
+
+        window.onbeforeprint = (event) => {
+            window.open(url);
+        };
+    </script>
+        
     </head> 
     <body>
         <div class='top'>
@@ -549,7 +565,7 @@
                     </div>			
                 </div>
                 <div class='about-me'>
-                    <span>I am a professionally qualified engineer with over 7 years experience. During this time, I worked on various projects, both desktop and web projects. Below is more detailed information about my experience and skills.</span>
+                    <span>I am a professionally qualified engineer with over 9 years experience. During this time, I worked on various projects, both desktop and web projects. Below is more detailed information about my experience and skills.</span>
                 </div>
             </div>
 
@@ -561,6 +577,15 @@
                             <hr class='line'/>			
                             <hr class='line2'/>	
                         </div>
+                        
+                        <div class='value-container'>
+                        <div class='contact-data'>
+                            <h3>SKYPE</h3>
+                            <a href='skype:yuriev.ivan?chat' target='_blank' title='skype'>yuriev.ivan</a>
+                        </div>
+                        <h2 class='round'>S</h2>
+                        </div>
+                        
                         <div class='value-container'>
                             <div class='contact-data'>
                                 <h3>EMAIL</h3>
