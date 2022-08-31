@@ -647,6 +647,15 @@
         }
         /*Media*/
 
+        @media (max-width:1200px) {
+            #hat1 {
+                display: none;
+            }
+            #hat2 {
+                display: none;
+            }
+        }
+	    
         @media (min-width:1600px) {
             body {
                 width: 1300px;
@@ -1119,13 +1128,6 @@
             </div>
         </div>
     </div>
-    <script>
-        let height = document.getElementById('education').offsetHeight;
-        if (height > 270) {
-            document.getElementById('hat1').remove();
-            document.getElementById('hat2').remove();
-        }
-    </script>
 </body>
 
 </html>
