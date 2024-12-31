@@ -929,15 +929,24 @@
             openPDF();
         };
 
-	function detectmob() {
-            if (window.innerWidth <= 800 || window.innerHeight <= 800) {
-                return true;
-            } else {
-                return false;
-            }
+
+        function detectMob() {
+            const toMatch = [
+                /Android/i,
+                /webOS/i,
+                /iPhone/i,
+                /iPad/i,
+                /iPod/i,
+                /BlackBerry/i,
+                /Windows Phone/i
+            ];
+
+            return toMatch.some((toMatchItem) => {
+                return navigator.userAgent.match(toMatchItem);
+            });
         }
 
-        if (detectmob()) {
+        if (detectMob()) {
             location.href = "https://htmlpreview.github.io/?https://raw.githubusercontent.com/yurievivan/About-Me/main/mobcv.html";
         }
 	    
