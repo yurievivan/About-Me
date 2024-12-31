@@ -14,4 +14,4 @@
 <br>
 <p>3. Below is a screenshot of the third version of the CV for small screens (phones, tablets). <b><a href="https://htmlpreview.github.io/?https://github.com/yurievivan/About-Me/blob/main/mobcv.html">Link to view MOBCV.html</a></b></p>
 <img width="720" alt="MOBCV" src="https://github.com/user-attachments/assets/7f6f7357-df00-40c4-b2d4-e1ca18cdab7a" />
-<p>Added JS script to detect screen size and redirect to this version of the CV.</p>
+<p>Added JS script to detect device and redirect to this version of the CV.</p>
