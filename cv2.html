@@ -423,6 +423,22 @@
             margin-top: 5px;
             color: #000;
         }
+
+	.language-selector {
+            border: none;
+            appearance: button;
+            outline: none;
+            width: 88%;
+        }
+
+        .language-selector option:checked {
+            display: none;
+        }
+
+        .menu__item {
+            text-indent: 3px;
+        }
+	    
         /*hamburger-menu*/
 
         .hamburger-menu {
@@ -498,7 +514,9 @@
             z-index: 1;
         }
 
-        .menu__item {
+        .menu__item,
+        .language-selector,
+        .language-selector option {
             display: block;
             padding: 10px 24px;
             color: #333;
@@ -719,7 +737,9 @@
                 width: 270px;
                 padding: 70px 0 15px;
             }
-            .menu__item {
+            .menu__item,
+            .language-selector,
+            .language-selector option {
                 font-size: 24px;
             }
         }
@@ -785,6 +805,11 @@
                     <li><a class="menu__item" onclick="openPDF()" href="">Open PDF</a></li>
                     <li><a class="menu__item" onclick="savePDF('CV_Ivan_Yuriev_Java_Developer')" href="">Save PDF</a></li>
                     <li><a class="menu__item" href="cv.html">Change Theme</a></li>
+		    <select class="language-selector" onchange="location = this.value;">
+                        <option value="cv2.html">English</option>
+                        <option value="languages/cv2_ru.html">Russian</option>
+                        <option value="languages/cv2_uk.html">Ukrainian</option>
+                    </select>
                 </ul>
             </div>
             <h1>IVAN YURIEV</h1>
